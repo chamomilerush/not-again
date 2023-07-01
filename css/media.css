@@ -1,0 +1,13 @@
+@media (max-width: 991px) {
+  .navbar-menu-mobile {
+    display: block;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 500;
+  }
+  .card-wrapper {
+    width: 100%;
+  }
+}
