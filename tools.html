@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Засоби створення анімації на сайтах</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <svg id="overlayButton" class="navbar-menu-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+              <a class="nav-link" href="intro.html">Вступ</a>
+              <a class="nav-link" href="tech.html">Техніки анімації</a>
+              <a class="nav-link" href="tools.html">Інструменти анімації</a>
+              <a class="nav-link" href="ex.html">Приклади анімації</a>
+              <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="overlay">
+        <div id="overlayContent">
+          <button id="closeOverlay">✕</button>
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+            <a class="nav-link" href="intro.html">Вступ</a>
+            <a class="nav-link" href="tech.html">Техніки анімації</a>
+            <a class="nav-link" href="tools.html">Інструменти анімації</a>
+            <a class="nav-link" href="ex.html">Приклади анімації</a>
+            <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+          </div>
+        </div>
+      </div>
+    
+<section>
+    <div class="container">
+        <h1 class="mt-5">Інструменти для створення анімації</h1>
+        <p>Існує багато популярних інструментів та програм для створення анімації на веб-сайтах. Ось огляд деяких з них, включаючи їх можливості та інтерфейси:</p>
+        <div class="wrapper">
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">Adobe Animate</h5>
+                  <p class="card-text">Це професійний програмний продукт від Adobe, який дозволяє створювати рухомі графічні зображення, анімацію та інтерактивний вміст. Він має потужні інструменти для створення складних анімацій з використанням ключових кадрів та таймлайну.</p>
+                  <a href="https://www.adobe.com/ua/products/animate.html" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">CSS анімація</h5>
+                  <p class="card-text">CSS (Cascading Style Sheets) має вбудовану підтримку для анімації. Ви можете використовувати ключові кадри, переходи та інші CSS властивості для створення різноманітних анімацій без необхідності використовувати JavaScript або додаткові інструменти.</p>
+                  <a href="https://w3schoolsua.github.io/css/index.html#gsc.tab=0" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">GreenSock (GSAP)</h5>
+                  <p class="card-text">GreenSock Animation Platform (GSAP) - це потужна JavaScript-бібліотека для створення високоефективних анімацій. Вона надає багато функцій і ефектів, таких як рух, затухання, зміна розміру, поворот і багато інших. GSAP підтримує часові лінії, твіни, паралакс ефекти та інші продвинуті можливості.</p>
+                  <a href="https://greensock.com/gsap/" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">SVG анімація</h5>
+                  <p class="card-text">SVG (Scalable Vector Graphics) - це формат векторних зображень, який дозволяє створювати анімацію безпосередньо в коді SVG. Ви можете використовувати CSS, JavaScript або SMIL (Synchronized Multimedia Integration Language) для створення різноманітних анімацій, таких як зміна форми, переміщення та затухання.</p>
+                  <a href="https://codeguida.com/post/146" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">Lottie</h5>
+                  <p class="card-text">Lottie - це бібліотека, розроблена Airbnb, яка дозволяє використовувати анімації, створені в Adobe After Effects, на веб-сайтах та мобільних додатках. Вона використовує JSON-файли, що містять дані про анімацію, та рендерить їх з використанням векторної графіки.</p>
+                  <a href="https://lottiefiles.com/" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-body">
+                  <h5 class="card-title">Webflow</h5>
+                  <p class="card-text">Webflow - це онлайн-сервіс, який поєднує веб-дизайн та розробку, дозволяючи створювати анімацію та інтерактивний контент без написання коду. Ви можете використовувати їх візуальний редактор для створення складних анімацій, переходів та інтерфейсів, а також налаштовувати їх параметри.</p>
+                  <a href="https://webflow.com/?gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJuYyVLxO9aKmC16Jn_y1xzbvmTrPuB759l6jWkWfUCcJfWbHPk-AGIaAhBaEALw_wcB" target="_blank" class="btn btn-primary">Дізнатись більше</a>
+                </div>
+            </div>
+        </div>
+
+
+          
+          <a href="ex.html" class="mt-3 btn btn-lg d-flex justify-content-center">Наступна сторінка</a>
+          <div class="progress mt-5" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 75%">75%</div>
+          </div>
+    </div>
+</section>
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

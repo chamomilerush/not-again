@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Засоби створення анімації на сайтах</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <svg id="overlayButton" class="navbar-menu-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+              <a class="nav-link" href="intro.html">Вступ</a>
+              <a class="nav-link" href="tech.html">Техніки анімації</a>
+              <a class="nav-link" href="tools.html">Інструменти анімації</a>
+              <a class="nav-link" href="ex.html">Приклади анімації</a>
+              <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="overlay">
+        <div id="overlayContent">
+          <button id="closeOverlay">✕</button>
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+            <a class="nav-link" href="intro.html">Вступ</a>
+            <a class="nav-link" href="tech.html">Техніки анімації</a>
+            <a class="nav-link" href="tools.html">Інструменти анімації</a>
+            <a class="nav-link" href="ex.html">Приклади анімації</a>
+            <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+          </div>
+        </div>
+      </div>
+    
+      
+
+    
+
+
+<section>
+    <div class="container">
+    
+        <h1 class="mt-5">Проектування та розробка web-сайту "Засоби створення анімації на сайтах"</h1>
+        <p class="mt-5">Ласкаво просимо на мій інформаційний сайт про засоби створення анімації на веб-сайтах. Тут ви знайдете розгорнуту інформацію про різні техніки та інструменти, що дозволяють створювати захоплюючу анімацію та покращувати користувацький досвід.</p>
+    
+        <p>Ви дізнаєтеся про основні техніки створення анімації, такі як CSS-анимація, JavaScript, SVG-анимація та інші. Ми також представимо вам популярні інструменти та ресурси, які можна використовувати для створення різноманітної анімації на ваших веб-сайтах.</p>
+    
+        <p>Запрошуємо вас ознайомитися з нашими розділами, вивчити поради та переглянути приклади використання анімації на веб-сайтах. Нехай ваші сторінки оживають та захоплюють ваших відвідувачів!</p>
+        <a href="intro.html" class="btn btn-primary btn-lg mt-3">Почати</a>
+    
+    
+        
+    
+        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+            <h2>Мапа сайту</h2>
+            <div class="accordion-item mt-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Вступ
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                    <li>Опис важливості анімації на сучасних веб-сайтах.</li>
+                    <li>Переваги використання анімації в дизайні та користувацькому досвіді.</li>
+                </ul></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Техніки створення анімації
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><ul>
+                    <li>Огляд основних технік створення анімації на веб-сайтах, таких як CSS-анимація, JavaScript, SVG-анимація та інші.</li>
+                    <li>Приклади реалізації різних технік засобами коду.</li>
+                </ul></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Інструменти для створення анімації
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><ul>
+                    <li>Популярні інструменти та програми для створення анімації, включаючи інтегровані редактори, бібліотеки та онлайн-ресурси.</li>
+                    <li>Огляд можливостей та інтерфейсів кожного інструменту.</li>
+                </ul></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Приклади використання анімації на сайтах
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><ul>
+                    <li>Збірка найкращих прикладів веб-сайтів, що використовують анімацію для покращення дизайну та взаємодії з користувачем.</li>
+                    <li>Пояснення того, які ефекти анімації були використані в кожному прикладі.</li>
+                </ul></div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          
+</section>
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

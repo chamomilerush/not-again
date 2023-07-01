@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Засоби створення анімації на сайтах</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <svg id="overlayButton" class="navbar-menu-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+              <a class="nav-link" href="intro.html">Вступ</a>
+              <a class="nav-link" href="tech.html">Техніки анімації</a>
+              <a class="nav-link" href="tools.html">Інструменти анімації</a>
+              <a class="nav-link" href="ex.html">Приклади анімації</a>
+              <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="overlay">
+        <div id="overlayContent">
+          <button id="closeOverlay">✕</button>
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+            <a class="nav-link" href="intro.html">Вступ</a>
+            <a class="nav-link" href="tech.html">Техніки анімації</a>
+            <a class="nav-link" href="tools.html">Інструменти анімації</a>
+            <a class="nav-link" href="ex.html">Приклади анімації</a>
+            <a class="nav-link" href="#" onclick="showToast()">Про автора</a>
+          </div>
+        </div>
+      </div>
+    
+<section>
+    <div class="container">
+        <h1 class="mt-5">Вступ до анімації</h1>
+        <h2 class="mt-5">Опис важливості анімації на сучасних веб-сайтах</h2>
+        <p>Опис важливості анімації на сучасних веб-сайтах полягає в тому, що анімація додає життя та динаміку до веб-сторінок, покращує їх візуальний вигляд та користувацький досвід. Вона стала необхідною складовою сучасного веб-дизайну і здатна забезпечити багато переваг, які сприяють успіху сайту. Ось кілька ключових переваг використання анімації на веб-сайтах:</p>
+        <ul>
+            <li class="mt-2">Привертання уваги: Анімація викликає велику увагу користувачів, оскільки рухливі об'єкти, переходи та ефекти привертають їхні очі. Це дозволяє зробити сайт більш привабливим і збільшити вірогідність того, що відвідувачі залишаться на сайті та дослідять його детальніше.</li>
+            <li class="mt-2">Покращений користувацький досвід: Анімація може поліпшити користувацький досвід шляхом створення плавних переходів, показу важливої інформації та інтерактивних взаємодій. Вона може допомогти відвідувачам легше орієнтуватися на сайті, зрозуміти його функціонал та використовувати його з задоволенням.</li>
+            <li class="mt-2">Виразність і емоційність: Анімація може допомогти ефективніше передавати емоції, настрій або повідомлення через веб-сайт. Вона може додати глибину і виразність до контенту, надати важливій інформації більш видовищний вигляд або створити враження взаємодії з користувачем.</li>
+            <li class="mt-2">Підсилення бренду та запам'ятовуваність: Використання анімації може допомогти вирізнити бренд і зробити його більш запам'ятовуваним. Індивідуальні анімаційні ефекти або стиль можуть стати розпізнаваними рисами бренду і створити позитивне враження на відвідувачів.</li>
+            <li class="mt-2">Виправлення помилок та надання зворотного зв'язку: Анімація може бути використана для нагадування про помилки, показу процесу завантаження або надання зворотного зв'язку користувачеві. Вона може покращити взаємодію з користувачем, допомогти йому уникнути помилок і зробити взаємодію з сайтом більш зрозумілою та зручною.</li>
+        </ul>
+        <div class="animated-element">
+            Animation
+          </div>
+          <h2 class="mt-5">Переваги використання анімації в дизайні та користувацькому досвіді.</h2>
+          <p>Використання анімації в дизайні та користувацькому досвіді веб-сайтів має безліч переваг, які сприяють покращенню взаємодії з користувачами та роблять сайт більш захопливим і привабливим. Ось кілька головних переваг:</p>
+          <ul>
+              <li class="mt-2">Привертання уваги: Анімація привертає увагу користувачів до конкретних елементів або інформації на сторінці. Рухливі об'єкти, зміна розмірів, переходи та інші анімаційні ефекти привертають оком і залучають користувачів до важливих елементів сайту.</li>
+              <li class="mt-2">Збільшення зрозумілості: Анімація може допомогти зрозуміти послідовність дій або процеси на сайті. Вона може показати, які елементи є взаємодійними або як вони змінюються при взаємодії користувача. Це полегшує сприйняття та зменшує можливість помилок у взаємодії з сайтом.</li>
+              <li class="mt-2">Вираження бренду і стилю: Анімація дозволяє підкреслити унікальність вашого бренду та стиль веб-сайту. Вона може додати характер і особливості до дизайну, роблячи його впізнаваним і запам'ятовуваним.</li>
+              <li class="mt-2">Покращення візуального враження: Анімація додає життєвості та динаміки до статичних елементів. Вона може зробити дизайн більш привабливим, цікавим та захоплюючим. Рух та переходи створюють естетичну привабливість і привертають увагу користувачів.</li>
+              <li class="mt-2">Збільшення запам'ятовуваності: Анімаційні ефекти допомагають запам'ятати інформацію, бо вони створюють емоційні зв'язки з користувачами. Яскраві, цікаві анімаційні елементи залишаються в пам'яті користувачів набагато краще, ніж прості статичні елементи.</li>
+              <li class="mt-2">Покращення користувацького досвіду: Анімація може зробити взаємодію з сайтом більш плавною, природною та задовільною для користувачів. Вона додає елемент гри, інтерактивності та емоційного зв'язку, що поліпшує загальний досвід використання сайту.</li>
+          </ul>
+          
+          <a href="tech.html" class="mt-3 btn btn-lg d-flex justify-content-center">Наступна сторінка</a>
+          <div class="progress mt-5" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 25%">25%</div>
+          </div>
+    </div>
+</section>
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
